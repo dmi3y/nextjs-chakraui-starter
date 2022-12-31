@@ -1,8 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Inter } from "@next/font/google";
-import { Grid, Code, Card, Box } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import ToggleTheme from "~/components/ToggleTheme";
+import Description from "~/layers/Description";
+import Brand from "~/layers/Brand";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,49 +16,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Grid as="main">
+      <Flex
+        as="main"
+        layerStyle="main"
+      >
         <ToggleTheme />
-        <Card>
-          <p>
-            Get started by editing&nbsp;
-            <Code>pages/index.tsx</Code>
-          </p>
-          <Box>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{" "}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
-          </Box>
-        </Card>
-
-        <div>
-          <Image
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
-          </div>
-        </div>
+        <Description />
+        <Brand />
 
         <div>
           <a
@@ -113,7 +78,7 @@ export default function Home() {
             </p>
           </a>
         </div>
-      </Grid>
+      </Flex>
     </>
   );
 }

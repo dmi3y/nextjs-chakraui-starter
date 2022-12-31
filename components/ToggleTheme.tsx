@@ -8,6 +8,7 @@ const ToggleTheme = () => {
     <IconButton
       onClick={toggleColorMode}
       icon={colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+      aria-label="Toggle color mode"
     />
   );
 };
