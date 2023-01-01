@@ -1,5 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). With addition of [Chakra UI](https://chakra-ui.com/) and bit more things, to hopefully make development faster and easier.
 
+See deployed example https://nextjs-chakraui-starter.vercel.app.
+
 ## What's Inside
 
 -   Next.js v13 + Chakra UI v2 (with icon package)

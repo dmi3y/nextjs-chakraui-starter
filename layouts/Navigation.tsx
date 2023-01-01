@@ -11,7 +11,10 @@ const Navigation = () => {
             <Box fontSize='sm' opacity='0.5'>
                 ■
             </Box>
-            <Link as={NextLink} href='#'>
+            <Link
+                as={NextLink}
+                href='https://github.com/dmi3y/nextjs-chakraui-starter'
+            >
                 Source
             </Link>
             <Spacer />
