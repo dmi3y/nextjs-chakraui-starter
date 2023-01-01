@@ -42,7 +42,15 @@ const semanticTokens = {
     calloutBorder: {
       default: "gray.400",
       _dark: "purple.500"
-    }
+    },
+    brandBackground: {
+      default: "green.100",
+      _dark: "blue.900"
+    },
+    brandBackgroundAlt: {
+      default: "blue.100",
+      _dark: "green.900"
+    },
   }
 }
 
@@ -50,8 +58,8 @@ const styles = {
   global: (props: StyleFunctionProps) => ({
     body: {
       fontFamily: 'body',
-      color: mode('gray.800', 'whiteAlpha.900')(props),
-      bg: mode('white', 'gray.800')(props),
+      color: mode('gray.800', 'gray.50')(props),
+      bg: mode('gray.50', 'gray.800')(props),
       lineHeight: 'base',
     },
     '*::placeholder': {
@@ -66,16 +74,16 @@ const styles = {
 
 const layerStyles = {
   main: {
-    flexDirection: "column",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: 6,
-    maxHeight: "100vh",
+    gridTemplateColumns: '1fr',
+    gridTemplateRows: 'auto 1fr auto',
+    gridTemplateAreas: `"header"
+                        "main"
+                        "footer"`,
+    minHeight: "100vh",
   },
-  description: {
-    fontFamily: 'mono',
-    maxWidth: 'layoutWidth',
-  },
+  resource: {
+    gridTemplateColumns: ['repeat(2, 1fr)', null, 'repeat(4, 1fr)'],
+  }
 };
 
 export default extendTheme({ config, colors, fonts, sizes, semanticTokens, styles, layerStyles, });
