@@ -2452,6 +2452,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-config-prettier@npm:^8.5.0":
+  version: 8.5.0
+  resolution: "eslint-config-prettier@npm:8.5.0"
+  peerDependencies:
+    eslint: ">=7.0.0"
+  bin:
+    eslint-config-prettier: bin/cli.js
+  checksum: 0d0f5c32e7a0ad91249467ce71ca92394ccd343178277d318baf32063b79ea90216f4c81d1065d60f96366fdc60f151d4d68ae7811a58bd37228b84c2083f893
+  languageName: node
+  linkType: hard
+
 "eslint-import-resolver-node@npm:^0.3.6":
   version: 0.3.6
   resolution: "eslint-import-resolver-node@npm:0.3.6"
@@ -3838,6 +3849,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"prettier@npm:2.8.1":
+  version: 2.8.1
+  resolution: "prettier@npm:2.8.1"
+  bin:
+    prettier: bin-prettier.js
+  checksum: 4f21a0f1269f76fb36f54e9a8a1ea4c11e27478958bf860661fb4b6d7ac69aac1581f8724fa98ea3585e56d42a2ea317a17ff6e3324f40cb11ff9e20b73785cc
+  languageName: node
+  linkType: hard
+
 "prop-types@npm:^15.6.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
@@ -4384,8 +4404,10 @@ __metadata:
     "@types/react-dom": 18.0.10
     eslint: 8.30.0
     eslint-config-next: 13.1.1
+    eslint-config-prettier: ^8.5.0
     framer-motion: ^6
     next: 13.1.1
+    prettier: 2.8.1
     react: 18.2.0
     react-dom: 18.2.0
     typescript: 4.9.4

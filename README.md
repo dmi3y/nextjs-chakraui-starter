@@ -1,12 +1,17 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). With addition of [Chakra UI](https://chakra-ui.com/) and bit more things, to hopefully make development faster and easier.
+
+## What's Inside
+
+- Next.js v13 + Chakra UI v2 (with icon package)
+- Optionally, [Volta](https://volta.sh/) managed Node and Yarn
+    - Using Yarn v3 with node linker as `node_modules` via `yarnrc.yml`.
+- 
 
 ## Getting Started
 
 First, run the development server:
 
 ```bash
-npm run dev
-# or
 yarn dev
 ```
 
