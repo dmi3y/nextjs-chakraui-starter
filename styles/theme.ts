@@ -31,7 +31,7 @@ const sizes = {
 const semanticTokens = {
     colors: {
         callout: {
-            default: 'gray.300',
+            default: 'gray.200',
             _dark: 'purple.800',
         },
         calloutBorder: {
@@ -75,6 +75,8 @@ const layerStyles = {
                         "main"
                         "footer"`,
         minHeight: '100vh',
+        maxWidth: 'layoutWidth',
+        marginX: 'auto',
     },
     resource: {
         gridTemplateColumns: ['repeat(2, 1fr)', null, 'repeat(4, 1fr)'],

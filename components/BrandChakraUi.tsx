@@ -32,8 +32,8 @@ const BrandChakraUi = () => {
                     y2='257'
                     gradientUnits='userSpaceOnUse'
                 >
-                    <stop stop-color='#7BCBD4'></stop>
-                    <stop offset='1' stop-color='#29C6B7'></stop>
+                    <stop stopColor='#7BCBD4'></stop>
+                    <stop offset='1' stopColor='#29C6B7'></stop>
                 </linearGradient>
             </defs>
         </Box>

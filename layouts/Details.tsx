@@ -1,13 +1,12 @@
 import {
     VStack,
-    Text,
     Code,
     Spacer,
     Box,
     keyframes,
-    usePrefersReducedMotion,
     Card,
     CardBody,
+    usePrefersReducedMotion,
 } from '@chakra-ui/react';
 import BrandNextJs from '~/components/BrandNextJs';
 import BrandChakraUi from '~/components/BrandChakraUi';
@@ -17,13 +16,29 @@ const pulse = keyframes`
   50% { transform: scale(1.2); }
   100% { transform: scale(1.0); }
 `;
+
 const hoverPulse = keyframes`
   0% { transform: scale(1.0); }
   50% { transform: scale(1.4); }
   100% { transform: scale(1.0); }
 `;
 
+const rotate = keyframes`
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(60deg); }
+  100% { transform: rotate(-0deg); }
+`;
+
 const Details = () => {
+    const beforeAndAfter = {
+        content: '""',
+        left: '50%',
+        position: 'absolute',
+        filter: 'blur(45px)',
+        transform: 'translateZ(0)',
+        zIndex: 'hide',
+    };
+
     const prefersReducedMotion = usePrefersReducedMotion();
     const animation = prefersReducedMotion
         ? undefined
@@ -33,9 +48,33 @@ const Details = () => {
         ? undefined
         : `${hoverPulse} infinite 0.5s linear`;
 
+    const rotateAnimation = prefersReducedMotion
+        ? undefined
+        : `${rotate} infinite 60s linear`;
+
     return (
         <VStack>
             <BrandNextJs />
+            <Box
+                animation={rotateAnimation}
+                position='relative'
+                _before={{
+                    background: 'brandBackgroundAlt',
+                    borderRadius: '50%',
+                    width: '480px',
+                    height: '360px',
+                    marginLeft: '-400px',
+                    marginTop: '-100px',
+                    ...beforeAndAfter,
+                }}
+                _after={{
+                    background: 'brandBackground',
+                    width: '240px',
+                    height: '180px',
+                    ...beforeAndAfter,
+                }}
+                zIndex='hide'
+            />
             <Box
                 animation={animation}
                 _hover={{ animation: hoverAnimation }}

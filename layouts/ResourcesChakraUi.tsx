@@ -5,17 +5,17 @@ const ResourcesChakraUi = () => {
     return (
         <SimpleGrid layerStyle='resource'>
             <ResourceLink
+                href='https://chakra-ui.com/getting-started'
+                header='Docs'
+            >
+                Find in-depth information about Chakra UI features and&nbsp;API.
+            </ResourceLink>
+            <ResourceLink
                 href='https://chakra-ui.com/getting-started/principles'
                 header='Principles'
             >
                 Learn about established principles to understand concepts Chakra
                 UI built on.
-            </ResourceLink>
-            <ResourceLink
-                href='https://chakra-ui.com/getting-started'
-                header='Docs'
-            >
-                Find in-depth information about Chakra UI features and&nbsp;API.
             </ResourceLink>
             <ResourceLink
                 href='https://chakra-ui.com/community/showcase'
