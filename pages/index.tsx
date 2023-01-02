@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Details from '~/layouts/Details';
-import TopLayout from '~/layouts/TopLayout';
 
 export default function Home() {
     return (
@@ -17,9 +16,7 @@ export default function Home() {
                 />
                 <link rel='icon' href='/favicon.ico' />
             </Head>
-            <TopLayout>
-                <Details />
-            </TopLayout>
+            <Details />
         </>
     );
 }
