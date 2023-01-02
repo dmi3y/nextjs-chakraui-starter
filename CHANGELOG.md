@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/dmi3y/nextjs-chakraui-starter/compare/v1.0.0...v1.0.1) (2023-01-02)
+
+
+### Bug Fixes
+
+* cleanup layout ([7f490b1](https://github.com/dmi3y/nextjs-chakraui-starter/commit/7f490b1eb32cf302c2ee7e00f160ddb01ef9d497))
+
 ## 1.0.0 (2023-01-02)
 
 
